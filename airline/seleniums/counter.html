@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+</head>
+<body>
+    <h1>0</h1>
+    <button class="increase">+</button>
+    <button class="decrease">-</button>
+</body>
+<script>
+    var up = document.querySelector(".increase");
+    var down = document.querySelector(".decrease");
+    var h1 = document.querySelector("h1");
+
+    let count = 0
+    up.addEventListener("click",()=>{
+        count ++
+        h1.innerHTML=count
+    })
+    down.addEventListener("click",()=>{
+        count --
+        h1.innerHTML=count
+
+       
+    })
+
+
+</script>
+</html>
